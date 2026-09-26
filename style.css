@@ -966,12 +966,11 @@ footer .copyright {
 
     .encabezado {
         padding: 12px 5%;
-
         min-height: 75px;
     }
 
     .nombre-marca span {
-    font-size: 31px;
+        font-size: 31px;
     }
 
     .nombre-marca small {
@@ -987,10 +986,9 @@ footer .copyright {
         font-size: 12px;
     }
 
-
-
+    /* Ondas más angostas para que no invadan el contenido */
     .onda-lateral {
-        width: 78px;
+        width: 42px;
     }
 
     footer img {
@@ -998,10 +996,10 @@ footer .copyright {
         max-width: 80%;
     }
 
+    /* HERO */
     .hero {
-        min-height: 560px;
-
-        padding: 70px 7%;
+        min-height: auto;
+        padding: 65px 9% 70px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -1011,72 +1009,113 @@ footer .copyright {
 
     .hero-contenido {
         max-width: none;
+        padding: 0 10px;
+    }
+
+    .texto-pequeno {
+        max-width: 100%;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        line-height: 1.08;
+        margin-bottom: 22px;
+    }
+
+    .hero-descripcion {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 0;
     }
 
     .hero-imagen {
         order: 2;
         align-self: center;
-        width: min(280px, 78vw);
+        width: min(270px, 72vw);
         flex: none;
     }
 
     .hero-boton {
         order: 3;
         align-self: flex-start;
+        margin-left: 10px;
     }
 
-    .hero h1 {
-        font-size: 43px;
-    }
-
-    .hero-descripcion {
-        font-size: 15px;
-    }
-
-
+    /* SERVICIOS */
     .seccion-servicios {
-        padding: 70px 5%;
+        padding: 70px 6%;
     }
 
     .titulo-seccion {
         margin-bottom: 40px;
+        padding: 0 10px;
     }
 
-
+    /*
+       En celular cada tarjeta pasa a una sola columna:
+       imagen -> texto -> datos -> botón.
+       Esto evita que el texto se superponga con la imagen.
+    */
     .servicio-contenido {
-        padding: 23px;
-
-        grid-template-columns: 86px 1fr;
-
-        gap: 12px;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
     }
 
-   .numero-servicio {
-        font-size: 19px;
+    .imagen-servicio {
+        width: 100%;
+        height: 190px;
+        border-radius: 20px;
+        flex-shrink: 0;
+    }
+
+    .servicio-texto {
+        width: 100%;
+        min-width: 0;
     }
 
     .servicio-texto h3 {
-        font-size: 23px;
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 9px;
     }
 
     .servicio-texto p {
+        max-width: none;
         font-size: 13px;
+        line-height: 1.65;
+        margin-bottom: 14px;
+    }
+
+    .datos-servicio {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
     }
 
     .boton-elegir,
     .opcion-facial {
-        grid-column: 2;
-
-        justify-self: start;
+        align-self: flex-start;
     }
 
-    .datos-servicio {
-        gap: 15px;
+    .boton-elegir {
+        min-width: 110px;
     }
 
+    .opcion-facial {
+        white-space: normal;
+    }
 
+    /* Reserva y ventana */
     .ventana {
         padding: 28px 22px;
     }
-
 }
+

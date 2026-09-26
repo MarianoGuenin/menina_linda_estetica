@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menina Linda Estética</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ondas decorativas laterales -->
+    <div class="ondas-bordes" aria-hidden="true">
+
+        <svg class="onda-lateral onda-izquierda" viewBox="0 0 180 1000" preserveAspectRatio="none">
+            <path class="onda-base" d="M0 0H92C42 75 132 135 72 215C20 285 125 340 65 430C12 510 128 585 62 675C10 748 125 830 72 900C48 932 38 968 55 1000H0Z"/>
+            <path class="onda-media" d="M0 0H62C25 82 104 140 48 220C3 285 102 350 43 435C0 498 105 590 42 680C-3 744 104 830 48 910C28 940 20 970 34 1000H0Z"/>
+            <path class="onda-clara" d="M0 0H35C5 85 76 145 27 225C-10 288 74 355 22 440C-8 500 78 590 20 685C-12 745 78 835 28 915C10 944 8 975 18 1000H0Z"/>
+        </svg>
+
+        <svg class="onda-lateral onda-derecha" viewBox="0 0 180 1000" preserveAspectRatio="none">
+            <path class="onda-base" d="M180 0H88C138 75 48 135 108 215C160 285 55 340 115 430C168 510 52 585 118 675C170 748 55 830 108 900C132 932 142 968 125 1000H180Z"/>
+            <path class="onda-media" d="M180 0H118C155 82 76 140 132 220C177 285 78 350 137 435C180 498 75 590 138 680C183 744 76 830 132 910C152 940 160 970 146 1000H180Z"/>
+            <path class="onda-clara" d="M180 0H145C175 85 104 145 153 225C190 288 106 355 158 440C188 500 102 590 160 685C192 745 102 835 152 915C170 944 172 975 162 1000H180Z"/>
+        </svg>
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- ENCABEZADO -->
+    <!-- ============================= -->
+
+    <header class="encabezado">
+
+        <div class="logo-contenedor">
+            <div class="nombre-marca">
+                <span>Menina Linda</span>
+                <small>Estética</small>
+            </div>
+        </div>
+
+        <nav class="navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#reservar">Reservar</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ============================= -->
+    <!-- INICIO -->
+    <!-- ============================= -->
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-contenido">
+
+                <p class="texto-pequeno">
+                    ESTÉTICA A DOMICILIO
+                </p>
+
+                <h1>
+                    Cuidado, bienestar<br>
+                    y un momento para vos.
+                </h1>
+
+                <p class="hero-descripcion">
+                    Servicios de cosmetología pensados para
+                    cuidar tu piel y brindarte un momento de
+                    relajación desde la comodidad de tu hogar.
+                </p>
+
+            </div>
+
+            <div class="hero-imagen">
+                <img
+                    src="imagenes_MeninaLinda/img1.jpeg"
+                    alt="Cuidado facial"
+                >
+            </div>
+
+            <a href="#servicios" class="boton-principal hero-boton">
+                Ver servicios
+            </a>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- SERVICIOS -->
+        <!-- ============================= -->
+
+        <section id="servicios" class="seccion-servicios">
+
+            <div class="titulo-seccion">
+
+                <p class="subtitulo">
+                    NUESTROS SERVICIOS
+                </p>
+
+                <h2>
+                    Elegí tu momento de cuidado
+                </h2>
+
+                <p>
+                    Todos nuestros servicios son realizados
+                    a domicilio.
+                </p>
+
+            </div>
+
+
+            <div class="lista-servicios">
+
+
+                <!-- SPA DE MANOS -->
+
+                <article class="servicio" id="servicioManos">
+
+                    <div class="servicio-contenido">
+
+                        <div class="imagen-servicio">
+                            <img
+                                src="imagenes_MeninaLinda/img01.jpeg"
+                                alt="Spa de manos"
+                            >
+                        </div>
+
+                        <div class="servicio-texto">
+
+                            <h3>
+                                Spa de manos
+                            </h3>
+
+                            <p>
+                                Tratamiento de cuidado y bienestar
+                                para las manos. Incluye limpieza,
+                                exfoliación suave e hidratación,
+                                brindando una sensación de suavidad
+                                y frescura.
+                            </p>
+
+                            <div class="datos-servicio">
+                                <span>Horario estimado: 1 hora</span>
+                                <strong>$10.000</strong>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="boton-elegir"
+                            onclick="seleccionarServicio('manos')"
+                            id="botonManos"
+                        >
+                            Elegir
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SPA DE PIES -->
+
+                <article class="servicio" id="servicioPies">
+
+                    <div class="servicio-contenido">
+
+                        <div class="imagen-servicio">
+                            <img
+                                src="imagenes_MeninaLinda/img02.jpeg"
+                                alt="Spa de pies"
+                            >
+                        </div>
+
+                        <div class="servicio-texto">
+
+                            <h3>
+                                Spa de pies
+                            </h3>
+
+                            <p>
+                                Tratamiento de cuidado y bienestar
+                                para los pies. Incluye limpieza,
+                                exfoliación suave e hidratación,
+                                brindando una sensación de suavidad
+                                y frescura.
+                            </p>
+
+                            <div class="datos-servicio">
+                                <span>Horario estimado: 1 hora</span>
+                                <strong>$13.000</strong>
+                            </div>
+
+                        </div>
+
+                        <button
+                            class="boton-elegir"
+                            onclick="seleccionarServicio('pies')"
+                            id="botonPies"
+                        >
+                            Elegir
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIMPIEZA FACIAL SIMPLE -->
+
+                <article class="servicio servicio-facial" id="servicioFacialSimple">
+
+                    <div class="servicio-contenido">
+
+                        <div class="imagen-servicio">
+                            <img
+                                src="imagenes_MeninaLinda/img03.jpeg"
+                                alt="Limpieza facial simple"
+                            >
+                        </div>
+
+                        <div class="servicio-texto">
+
+                            <h3>
+                                Limpieza facial simple
+                            </h3>
+
+                            <p>
+                                Es un tratamiento básico que incluye
+                                desmaquillante, una exfoliación suave,
+                                tónico, mascarilla hidratante y crema
+                                final con protector solar. No incluye
+                                remoción manual de impurezas.
+                            </p>
+
+                            <div class="datos-servicio">
+                                <span>Horario estimado: 1 hora</span>
+                                <strong>$15.000</strong>
+                            </div>
+
+                        </div>
+
+                        <label class="opcion-facial">
+
+                            <input
+                                type="radio"
+                                name="limpiezaFacial"
+                                value="simple"
+                                onchange="seleccionarFacial('simple')"
+                            >
+
+                            <span class="radio-personalizado"></span>
+
+                            <span>
+                                Elegir
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LIMPIEZA FACIAL CON EXTRACCIÓN -->
+
+                <article class="servicio servicio-facial" id="servicioFacialExtraccion">
+
+                    <div class="servicio-contenido">
+
+                        <div class="imagen-servicio">
+                            <img
+                                src="imagenes_MeninaLinda/img04.jpeg"
+                                alt="Limpieza facial con extracción y alta frecuencia"
+                            >
+                        </div>
+
+                        <div class="servicio-texto">
+
+                            <h3>
+                                Limpieza facial con extracción
+                                y alta frecuencia
+                            </h3>
+
+                            <p>
+                                Es un tratamiento purificante enfocado
+                                en despejar la piel y reducir
+                                imperfecciones. Incluye la remoción
+                                manual de puntos negros tras preparar
+                                los poros, seguida de la aplicación de
+                                alta frecuencia para calmar la
+                                inflamación, desinfectar la zona y
+                                favorecer la cicatrización.
+                            </p>
+
+                            <div class="datos-servicio">
+                                <span>Horario estimado: 2 horas</span>
+                                <strong>$20.000</strong>
+                            </div>
+
+                        </div>
+
+                        <label class="opcion-facial">
+
+                            <input
+                                type="radio"
+                                name="limpiezaFacial"
+                                value="extraccion"
+                                onchange="seleccionarFacial('extraccion')"
+                            >
+
+                            <span class="radio-personalizado"></span>
+
+                            <span>
+                                Elegir
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- CARRITO -->
+        <!-- ============================= -->
+
+        <section class="seccion-carrito">
+
+            <button
+                class="boton-carrito"
+                onclick="abrirCarrito()"
+            >
+                <span>Ver selección</span>
+
+                <span id="cantidadCarrito">
+                    0
+                </span>
+            </button>
+
+        </section>
+
+
+        <!-- ============================= -->
+        <!-- RESERVA -->
+        <!-- ============================= -->
+
+        <section id="reservar" class="seccion-reserva">
+
+            <div class="reserva-contenido">
+
+                <p class="subtitulo">
+                    RESERVÁ TU TURNO
+                </p>
+
+                <h2>
+                    Un momento para vos
+                </h2>
+
+                <p>
+                    Completá tus datos y prepararemos el mensaje
+                    para solicitar tu turno por WhatsApp.
+                </p>
+
+                <button
+                    class="boton-principal"
+                    onclick="irAlPedido()"
+                >
+                    Reservar turno
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ============================= -->
+    <!-- VENTANA DEL CARRITO -->
+    <!-- ============================= -->
+
+    <div
+        id="ventanaCarrito"
+        class="ventana-fondo oculto"
+    >
+
+        <div class="ventana">
+
+            <button
+                class="cerrar"
+                onclick="cerrarCarrito()"
+            >
+                ×
+            </button>
+
+            <h2>
+                Tu selección
+            </h2>
+
+            <div id="listaCarrito">
+            </div>
+
+            <div class="total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="totalCarrito">
+                    $0
+                </strong>
+
+            </div>
+
+            <button
+                class="boton-principal boton-ancho"
+                onclick="irAlPedido()"
+            >
+                Continuar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- VENTANA DE RESERVA -->
+    <!-- ============================= -->
+
+    <div
+        id="ventanaPedido"
+        class="ventana-fondo oculto"
+    >
+
+        <div class="ventana">
+
+            <button
+                class="cerrar"
+                onclick="cerrarPedido()"
+            >
+                ×
+            </button>
+
+            <p class="subtitulo">
+                RESERVA
+            </p>
+
+            <h2>
+                Tus datos
+            </h2>
+
+            <p class="texto-ayuda">
+                La ubicación será coordinada personalmente
+                por WhatsApp.
+            </p>
+
+
+            <form id="formularioPedido">
+
+                <div class="campo">
+
+                    <label for="nombre">
+                        Nombre y apellido
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ej: María González"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="telefono">
+                        Número de contacto
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Ej: 3764..."
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="fecha">
+                        Día
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fecha"
+                        placeholder="DD/MM"
+                        maxlength="5"
+                        inputmode="numeric"
+                        autocomplete="off"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="hora">
+                        Horario preferido
+                    </label>
+
+                    <input
+                        type="time"
+                        id="hora"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="boton-principal boton-ancho"
+                >
+                    Solicitar turno por WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ============================= -->
+    <!-- MENSAJE -->
+    <!-- ============================= -->
+
+    <div
+        id="mensaje"
+        class="mensaje"
+    >
+        Servicio agregado
+    </div>
+
+
+    <footer>
+
+        <img
+            src="imagenes_MeninaLinda/LogoMenina.jpeg"
+            alt="Menina Linda Estética"
+        >
+
+        <p>
+            Estética a domicilio
+        </p>
+
+        <p class="copyright">
+            © 2026 Menina Linda Estética
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
